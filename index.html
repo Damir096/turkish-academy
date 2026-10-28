@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TURKISH ACADEMY — Онлайн-школа турецкого языка</title>
+  <meta name="description" content="TURKISH ACADEMY — изучайте живой турецкий язык легко и с удовольствием. Современная платформа, разговорная практика и персональные направления обучения." />
+  <link rel="icon" type="image/png" href="assets/logo-circle-badge.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=9" />
+</head>
+<body>
+
+  <!-- Мягкий многослойный фоновый дизайн (двухслойная филигрань + 6 акварельных облаков + мелкие детали) -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--sky"></div>
+    <div class="ambient-orb ambient-orb--sand"></div>
+    <div class="ambient-orb ambient-orb--teal"></div>
+    <div class="ambient-orb ambient-orb--rose"></div>
+    <div class="ambient-orb ambient-orb--gold"></div>
+    <div class="ambient-orb ambient-orb--blush"></div>
+
+    <!-- Воздушный контур турецкого тюльпана слева -->
+    <svg class="ambient-motif ambient-motif--tulip-left" viewBox="0 0 120 180" fill="none">
+      <path d="M60 14C46 38 30 56 32 88C34 114 46 128 60 132C74 128 86 114 88 88C90 56 74 38 60 14Z" stroke="currentColor" stroke-width="2.2"/>
+      <path d="M34 62C18 52 14 78 26 106C34 124 48 132 60 132C72 132 86 124 94 106C106 78 102 52 86 62" stroke="currentColor" stroke-width="2"/>
+      <path d="M60 132V172M60 156C44 152 34 142 30 132M60 162C76 158 86 148 90 138" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Воздушный силуэт башни Галата и чаек справа -->
+    <svg class="ambient-motif ambient-motif--galata-right" viewBox="0 0 130 210" fill="none">
+      <path d="M65 12V30M45 68L65 30L85 68H45ZM40 76H90V88H40V76ZM46 88V188H84V88" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M56 112C56 106 74 106 74 112V128H56V112Z" stroke="currentColor" stroke-width="2"/>
+      <path d="M18 44C24 38 30 40 34 46C38 40 44 38 50 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M92 32C97 27 102 29 105 34C108 29 113 27 118 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- Полностраничный гобелен мелких приятных стамбульских деталей по краям скролла -->
+  <div class="bg-tapestry" aria-hidden="true">
+    <!-- Лапки стамбульского котика на полях (верх-середина слева) -->
+    <svg class="tapestry-item" style="top:18.5%;left:14px;width:58px;opacity:0.46;" viewBox="0 0 60 150" fill="#C83733">
+      <g transform="translate(14,18) rotate(-18)">
+        <ellipse cx="10" cy="14" rx="5.5" ry="4.5"/><circle cx="3" cy="6" r="2.3"/><circle cx="8" cy="4" r="2.3"/><circle cx="13" cy="4.5" r="2.3"/><circle cx="17.5" cy="7.5" r="2.1"/>
+      </g>
+      <g transform="translate(28,58) rotate(12)">
+        <ellipse cx="10" cy="14" rx="5.5" ry="4.5"/><circle cx="3" cy="6" r="2.3"/><circle cx="8" cy="4" r="2.3"/><circle cx="13" cy="4.5" r="2.3"/><circle cx="17.5" cy="7.5" r="2.1"/>
+      </g>
+      <g transform="translate(10,102) rotate(-14)">
+        <ellipse cx="10" cy="14" rx="5.5" ry="4.5"/><circle cx="3" cy="6" r="2.3"/><circle cx="8" cy="4" r="2.3"/><circle cx="13" cy="4.5" r="2.3"/><circle cx="17.5" cy="7.5" r="2.1"/>
+      </g>
+    </svg>
+
+    <!-- Мини-розетка Изника и звездочки справа -->
+    <svg class="tapestry-item micro-float" style="top:27%;right:14px;width:72px;opacity:0.48;" viewBox="0 0 80 80" fill="none">
+      <path d="M40 6L49 31L74 40L49 49L40 74L31 49L6 40L31 31Z" stroke="#154B88" stroke-width="1.8" fill="#FFFFFF" fill-opacity="0.72"/>
+      <circle cx="40" cy="40" r="11" stroke="#C83733" stroke-width="1.6"/>
+      <circle cx="40" cy="40" r="4" fill="#DF9C55"/>
+    </svg>
+
+    <!-- Кораблик-паром (Vapur) с волнами слева в середине страницы -->
+    <svg class="tapestry-item micro-float" style="top:46.5%;left:10px;width:88px;opacity:0.48;" viewBox="0 0 96 72" fill="none">
+      <path d="M16 44H80L72 56H24L16 44Z" fill="#154B88" fill-opacity="0.28" stroke="#154B88" stroke-width="1.8" stroke-linejoin="round"/>
+      <rect x="26" y="32" width="44" height="12" rx="3" stroke="#154B88" stroke-width="1.7" fill="#FFFFFF" fill-opacity="0.9"/>
+      <rect x="44" y="20" width="9" height="12" rx="2" fill="#C83733" fill-opacity="0.8" stroke="#154B88" stroke-width="1.5"/>
+      <path d="M50 15C53 10 59 11 63 8" stroke="#1A7E86" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="2 3"/>
+      <circle cx="34" cy="38" r="2" fill="#154B88"/><circle cx="44" cy="38" r="2" fill="#154B88"/><circle cx="54" cy="38" r="2" fill="#154B88"/><circle cx="64" cy="38" r="2" fill="#154B88"/>
+      <path d="M8 61Q20 56 32 61T56 61T80 61" stroke="#1A7E86" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Стамбульский котик, смотрящий на звездочку, слева ниже -->
+    <svg class="tapestry-item" style="top:62.5%;left:12px;width:70px;opacity:0.46;" viewBox="0 0 80 96" fill="none">
+      <path d="M28 78C20 78 16 70 18 58C20 46 26 40 26 32L24 18L33 25C36 24 40 24 43 25L52 18L50 32C50 40 56 48 56 60C56 72 48 78 38 78H28Z" fill="#DF9C55" fill-opacity="0.45" stroke="#154B88" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M54 72C66 72 70 62 66 54C63 49 58 52 60 57" stroke="#154B88" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M62 18L64 23L69 25L64 27L62 32L60 27L55 25L60 23Z" fill="#C83733" fill-opacity="0.8"/>
+    </svg>
+
+    <!-- Мозаичный фонарик справа ниже -->
+    <svg class="tapestry-item micro-float" style="top:77%;right:14px;width:66px;opacity:0.5;" viewBox="0 0 72 110" fill="none">
+      <line x1="36" y1="0" x2="36" y2="24" stroke="#154B88" stroke-width="1.7"/>
+      <path d="M24 24H48L54 36H18L24 24Z" fill="#154B88" fill-opacity="0.32" stroke="#154B88" stroke-width="1.6"/>
+      <ellipse cx="36" cy="54" rx="22" ry="18" fill="#FCE5B8" fill-opacity="0.88" stroke="#C83733" stroke-width="1.7"/>
+      <path d="M20 54L36 40L52 54L36 68Z" stroke="#1A7E86" stroke-width="1.5"/>
+      <circle cx="36" cy="54" r="4" fill="#C83733" fill-opacity="0.75"/>
+      <path d="M24 72H48L36 84L24 72Z" fill="#154B88" fill-opacity="0.32" stroke="#154B88" stroke-width="1.6"/>
+      <line x1="36" y1="84" x2="36" y2="98" stroke="#C83733" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Веточка тюльпанов слева у секции FAQ -->
+    <svg class="tapestry-item micro-float" style="top:90.5%;left:14px;width:68px;opacity:0.48;" viewBox="0 0 76 104" fill="none">
+      <path d="M38 14C30 28 22 38 24 56C25 69 32 76 38 78C44 76 51 69 52 56C54 38 46 28 38 14Z" fill="#C83733" fill-opacity="0.35" stroke="#C83733" stroke-width="1.8"/>
+      <path d="M38 78V100M38 92C27 89 20 82 18 74M38 95C49 92 56 85 58 77" stroke="#1A7E86" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- ========================================================================
+       БЛОК 1: ПЛАВАЮЩАЯ ШАПКА-КАПСУЛА (аналог #rec580956879 + #rec580973656)
+       6 временных услуг-заглушек вместо старых курсов и книги
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-capsule">
+        <a href="#top" class="brand-logo" aria-label="TURKISH ACADEMY — На главную">
+          <img src="assets/logo-icon-transparent.png" alt="" class="brand-logo__skyline" />
+          <img src="assets/logo-wordmark-transparent.png" alt="TURKISH ACADEMY" class="brand-logo__wordmark" />
+        </a>
+
+        <nav class="header-nav" aria-label="Направления обучения">
+          <a href="#format" class="header-nav__link dance-link" data-open-service="1">Экспресс-старт</a>
+          <a href="#format" class="header-nav__link dance-link" data-open-service="2">Деловой турецкий</a>
+          <a href="#format" class="header-nav__link dance-link" data-open-service="3">Подготовка TÖMER</a>
+          <a href="#format" class="header-nav__link dance-link" data-open-service="4">Спикинг-практика</a>
+          <a href="#format" class="header-nav__link dance-link" data-open-service="5">Тренажер слов</a>
+          <a href="#format" class="header-nav__link dance-link" data-open-service="6">VIP-сопровождение</a>
+        </nav>
+
+        <div style="display:flex;align-items:center;gap:10px;">
+          <button type="button" class="pill-btn pill-btn--white" data-open-modal="manager">
+            <span>Начать учиться</span>
+            <span class="pill-btn__circle">↗</span>
+          </button>
+          <button type="button" class="burger-btn" id="burgerOpenBtn" aria-label="Открыть меню">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Выезжающее мобильное бургер-меню (аналог #rec580975342 T450) -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer__backdrop" id="burgerBackdrop"></div>
+    <div class="mobile-drawer__panel">
+      <div>
+        <div class="mobile-drawer__top">
+          <img src="assets/logo-full-transparent.png" alt="TURKISH ACADEMY" class="mobile-drawer__logo" />
+          <button type="button" class="mobile-drawer__close" id="burgerCloseBtn" aria-label="Закрыть меню">×</button>
+        </div>
+        <div class="mobile-drawer__links">
+          <a href="#format" data-open-service="1">Экспресс-старт <span>→</span></a>
+          <a href="#format" data-open-service="2">Деловой турецкий <span>→</span></a>
+          <a href="#format" data-open-service="3">Подготовка TÖMER <span>→</span></a>
+          <a href="#format" data-open-service="4">Спикинг-практика <span>→</span></a>
+          <a href="#format" data-open-service="5">Тренажер слов <span>→</span></a>
+          <a href="#format" data-open-service="6">VIP-сопровождение <span>→</span></a>
+        </div>
+        <div class="mobile-drawer__sections">
+          <div class="mobile-drawer__sections-label">Разделы страницы:</div>
+          <div class="mobile-drawer__chips">
+            <a href="#people" data-close-drawer>Кому подойдет</a>
+            <a href="#format" data-close-drawer>Программы</a>
+            <a href="#hocalar" data-close-drawer>Команда</a>
+            <a href="#reviews" data-close-drawer>Отзывы</a>
+            <a href="#faq" data-close-drawer>FAQ</a>
+            <a href="#contacts" data-close-drawer>Контакты</a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="pill-btn" data-open-modal="manager" style="width:100%;">
+        <span>Начать учиться</span>
+        <span class="pill-btn__circle">↗</span>
+      </button>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ======================================================================
+         БЛОК 2: ПЕРВЫЙ ЭКРАН / HERO (аналог #rec580984842)
+         Центральный стек + 4 плавающих элемента по углам
+         ====================================================================== -->
+    <section class="hero-section">
+      <!-- Богато детализированная, воздушная пастельная панорама Босфора и Стамбула -->
+      <svg class="hero-wave-bg" viewBox="0 0 1920 920" preserveAspectRatio="xMidYMid slice" fill="none">
+        <defs>
+          <linearGradient id="bosphorusWave1" x1="0" y1="180" x2="1920" y2="920" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#C8E0FA" stop-opacity="0.72" />
+            <stop offset="50%" stop-color="#FCE8D5" stop-opacity="0.64" />
+            <stop offset="100%" stop-color="#C2E8EA" stop-opacity="0.72" />
+          </linearGradient>
+          <linearGradient id="bosphorusWave2" x1="1920" y1="360" x2="0" y2="920" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#B6D6F8" stop-opacity="0.58" />
+            <stop offset="52%" stop-color="#FADAC2" stop-opacity="0.5" />
+            <stop offset="100%" stop-color="#B5E3E6" stop-opacity="0.6" />
+          </linearGradient>
+          <linearGradient id="bosphorusWave3" x1="0" y1="680" x2="1920" y2="920" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#A8CEF6" stop-opacity="0.46" />
+            <stop offset="50%" stop-color="#F7D5BE" stop-opacity="0.4" />
+            <stop offset="100%" stop-color="#A8DFE3" stop-opacity="0.48" />
+          </linearGradient>
+          <radialGradient id="sunGlowHero" cx="50%" cy="39%" r="38%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+            <stop offset="68%" stop-color="#FFF7EC" stop-opacity="0.72" />
+            <stop offset="100%" stop-color="#FFF7EC" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- Мягкое солнечное свечение позади главного заголовка для идеальной читаемости -->
+        <ellipse cx="960" cy="360" rx="690" ry="300" fill="url(#sunGlowHero)" />
+
+        <!-- Дальний левый берег: отчетливый ажурный Босфорский мост (Boğaziçi Köprüsü) -->
+        <g opacity="0.34" stroke="#154B88">
+          <line x1="95" y1="295" x2="95" y2="455" stroke-width="3.4"/>
+          <line x1="365" y1="280" x2="365" y2="440" stroke-width="3.4"/>
+          <line x1="87" y1="320" x2="103" y2="320" stroke-width="2.4"/>
+          <line x1="87" y1="365" x2="103" y2="365" stroke-width="2.4"/>
+          <line x1="357" y1="305" x2="373" y2="305" stroke-width="2.4"/>
+          <line x1="357" y1="350" x2="373" y2="350" stroke-width="2.4"/>
+          <path d="M-10 385 Q 50 355 95 298 Q 230 402 365 283 Q 425 345 485 375" stroke-width="2.4"/>
+          <line x1="0" y1="402" x2="480" y2="386" stroke-width="2.8"/>
+          <line x1="140" y1="334" x2="140" y2="397" stroke-width="1.4"/>
+          <line x1="185" y1="354" x2="185" y2="395" stroke-width="1.4"/>
+          <line x1="230" y1="360" x2="230" y2="394" stroke-width="1.4"/>
+          <line x1="275" y1="352" x2="275" y2="392" stroke-width="1.4"/>
+          <line x1="320" y1="326" x2="320" y2="391" stroke-width="1.4"/>
+        </g>
+
+        <!-- Дальний правый берег: силуэт башни Галата, куполов и минарета на горизонте -->
+        <g opacity="0.34" stroke="#1A7E86" fill="#1A7E86" fill-opacity="0.12">
+          <!-- Башня Галата -->
+          <path d="M1610 250 L1628 208 L1646 250 Z" stroke-width="2.2" fill="#1A7E86" fill-opacity="0.24"/>
+          <line x1="1628" y1="195" x2="1628" y2="208" stroke-width="2.2"/>
+          <rect x="1606" y="250" width="44" height="8" rx="2" stroke-width="2"/>
+          <rect x="1611" y="258" width="34" height="92" stroke-width="2" fill="#DF9C55" fill-opacity="0.22"/>
+          <path d="M1622 278 C1622 273 1634 273 1634 278 V290 H1622 Z" stroke-width="1.6"/>
+          <!-- Купола и тонкий минарет старого города -->
+          <path d="M1700 350 C1700 316 1756 316 1756 350 Z" stroke-width="2"/>
+          <path d="M1682 350 C1682 334 1704 334 1704 350 Z" stroke-width="1.6"/>
+          <path d="M1752 350 C1752 334 1774 334 1774 350 Z" stroke-width="1.6"/>
+          <line x1="1728" y1="306" x2="1728" y2="318" stroke-width="2"/>
+          <rect x="1788" y="264" width="7" height="86" stroke-width="1.8"/>
+          <path d="M1786 264 L1791.5 244 L1797 264 Z" stroke-width="1.8"/>
+        </g>
+
+        <!-- 3 мягких акварельных слоя волн Босфора -->
+        <path d="M-80 235 C 340 95, 640 420, 1050 265 C 1430 125, 1690 315, 2000 180 L 2000 920 L -80 920 Z" fill="url(#bosphorusWave1)"/>
+        <path d="M-80 545 C 380 395, 790 675, 1260 515 C 1580 405, 1780 525, 2000 455 L 2000 920 L -80 920 Z" fill="url(#bosphorusWave2)"/>
+        <path d="M-80 735 C 320 650, 760 830, 1240 710 C 1560 635, 1770 740, 2000 690 L 2000 920 L -80 920 Z" fill="url(#bosphorusWave3)"/>
+
+        <!-- Пунктирный маршрут стамбульского парома и морская рябь -->
+        <path d="M-60 485 C 420 270, 880 675, 1380 415 C 1660 265, 1820 435, 1980 365" stroke="#154B88" stroke-opacity="0.26" stroke-width="2.5" stroke-dasharray="7 9"/>
+        <path d="M410 690 Q 435 680 460 690 T 510 690" stroke="#1A7E86" stroke-opacity="0.38" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M1330 660 Q 1355 650 1380 660 T 1430 660" stroke="#154B88" stroke-opacity="0.34" stroke-width="2.2" stroke-linecap="round"/>
+
+        <!-- Стамбульский паромчик (Vapur) на волне слева -->
+        <g transform="translate(385, 452) rotate(-5)" opacity="0.48">
+          <path d="M6 26H58L51 36H13L6 26Z" fill="#154B88" fill-opacity="0.35" stroke="#154B88" stroke-width="1.9"/>
+          <rect x="15" y="16" width="34" height="10" rx="2.5" fill="#FFFFFF" stroke="#154B88" stroke-width="1.7"/>
+          <rect x="29" y="7" width="7" height="9" rx="1.5" fill="#C83733" stroke="#154B88" stroke-width="1.5"/>
+          <path d="M34 3C38 -2 44 0 49 -4" stroke="#1A7E86" stroke-width="1.7" stroke-dasharray="2 3" stroke-linecap="round"/>
+        </g>
+
+        <!-- Стайка стамбульских чаек (Martılar) на разной высоте -->
+        <path d="M335 162C345 152 355 155 361 164C367 155 377 152 387 162" stroke="#154B88" stroke-opacity="0.38" stroke-width="2.3" stroke-linecap="round"/>
+        <path d="M402 186C409 179 416 181 420 187C424 181 431 179 438 186" stroke="#1A7E86" stroke-opacity="0.36" stroke-width="2" stroke-linecap="round"/>
+        <path d="M565 142C571 136 577 138 581 143C585 138 591 136 597 142" stroke="#154B88" stroke-opacity="0.32" stroke-width="1.9" stroke-linecap="round"/>
+        <path d="M1455 148C1464 139 1473 142 1479 150C1485 142 1494 139 1503 148" stroke="#1A7E86" stroke-opacity="0.4" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M1385 178C1391 172 1397 174 1401 179C1405 174 1411 172 1417 178" stroke="#154B88" stroke-opacity="0.34" stroke-width="1.9" stroke-linecap="round"/>
+        <path d="M1535 288C1542 281 1549 283 1553 289C1557 283 1564 281 1571 288" stroke="#154B88" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- Мелкие искорки, лепестки тюльпана и золотистые пылинки света -->
+        <path d="M520 265L524 275L534 279L524 283L520 293L516 283L506 279L516 275Z" fill="#DF9C55" fill-opacity="0.62"/>
+        <path d="M1395 258L1398 266L1406 269L1398 272L1395 280L1392 272L1384 269L1392 266Z" fill="#C83733" fill-opacity="0.48"/>
+        <path d="M675 612L678 620L686 623L678 626L675 634L672 626L664 623L672 620Z" fill="#1A7E86" fill-opacity="0.48"/>
+        <path d="M1245 595L1248 603L1256 606L1248 609L1245 617L1242 609L1234 606L1242 603Z" fill="#DF9C55" fill-opacity="0.6"/>
+        <!-- Мини-лепестки тюльпана в воздухе -->
+        <path d="M612 214C618 206 626 208 624 218C622 225 614 225 612 214Z" fill="#C83733" fill-opacity="0.36"/>
+        <path d="M1310 212C1316 204 1324 206 1322 216C1320 223 1312 223 1310 212Z" fill="#C83733" fill-opacity="0.34"/>
+        <circle cx="478" cy="340" r="3.5" fill="#DF9C55" fill-opacity="0.6"/>
+        <circle cx="1442" cy="352" r="4" fill="#1A7E86" fill-opacity="0.45"/>
+        <circle cx="755" cy="175" r="3" fill="#154B88" fill-opacity="0.38"/>
+        <circle cx="1175" cy="170" r="3" fill="#C83733" fill-opacity="0.42"/>
+      </svg>
+
+      <div class="container">
+        <div class="hero-canvas">
+          <p class="hero-kicker">
+            <span class="hero-kicker__dot"></span>
+            <span>Онлайн-школа турецкого языка TURKISH ACADEMY</span>
+          </p>
+
+          <h1 class="hero-title">
+            Изучайте турецкий
+            <span class="hero-title__accent">легко и с удовольствием</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Мы создали пространство современного обучения, чтобы день за днем вы уверенно открывали для себя живую речь, работу и путешествия без границ
+          </p>
+
+          <div class="hero-cta-wrap">
+            <button type="button" class="pill-btn" data-open-modal="manager">
+              <span>Начать учиться</span>
+              <span class="pill-btn__circle">↗</span>
+            </button>
+
+            <div class="hero-start-note handwritten">
+              <span>Набор групп</span>
+              <span class="hero-start-oval">
+                открыт
+                <svg viewBox="0 0 150 56" fill="none">
+                  <path d="M12 28C14 11 52 5 86 7C124 9 144 19 142 32C140 46 98 52 58 50C23 48 6 38 18 22" stroke="#C83733" stroke-width="2.6" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- 4 угловых плавающих элемента (точная геометрия первого экрана) -->
+          <div class="hero-floats-mobile-row">
+            <!-- Верх-лево: Фигурный стикер со статистикой -->
+            <div class="hero-float hero-float--tl">
+              <svg viewBox="0 0 180 160" fill="none">
+                <path d="M90 6L113 23L142 18L151 45L175 62L166 90L174 118L149 133L138 156L109 149L90 160L71 149L42 156L31 133L6 118L14 90L5 62L29 45L38 18L67 23L90 6Z" fill="#154B88"/>
+              </svg>
+              <span>больше 1800 студентов</span>
+            </div>
+
+            <!-- Верх-право: Атмосферная мини-карточка с фирменной панорамой Стамбула + бейдж "культура" -->
+            <div class="hero-float hero-float--tr">
+              <div class="hero-mini-media">
+                <img src="assets/logo-icon-transparent.png" alt="Символы Стамбула" />
+                <div class="hero-mini-media__sub">Bir çay lütfen · Стамбул</div>
+              </div>
+              <span class="hero-culture-tag">культура</span>
+            </div>
+
+            <!-- Низ-лево: Мини-карточка живого диалога -->
+            <div class="hero-float hero-float--bl">
+              <div class="hero-dialog-card">
+                <span class="hero-dialog-card__badge">● Живой диалог</span>
+                <p>— Nasılsın? Her şey yolunda mı?</p>
+                <small>Понимаете речь с первых недель</small>
+              </div>
+            </div>
+
+            <!-- Низ-право: Облачко "разговорный турецкий" -->
+            <div class="hero-float hero-float--br">
+              <svg viewBox="0 0 212 124" fill="none">
+                <rect x="6" y="10" width="200" height="104" rx="52" fill="#FFFFFF" stroke="#154B88" stroke-width="2"/>
+              </svg>
+              <span>разговорный турецкий</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 3: БЕСКОНЕЧНАЯ БЕГУЩАЯ СТРОКА / MARQUEE (аналог #rec581088369)
+         ====================================================================== -->
+    <div class="marquee-band" aria-label="Бегущая строка">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>MERHABA! HOŞ GELDİNİZ</span><span class="marquee-star">✦</span>
+          <span>ЖИВОЙ ТУРЕЦКИЙ БЕЗ ЗУБРЕЖКИ</span><span class="marquee-star">✦</span>
+          <span>ПРАКТИКА С ПЕРВОГО ЗАНЯТИЯ</span><span class="marquee-star">✦</span>
+          <span>HER ŞEY ÇOK GÜZEL OLACAK</span><span class="marquee-star">✦</span>
+          <span>СОВРЕМЕННАЯ ИНТЕРАКТИВНАЯ ПЛАТФОРМА</span><span class="marquee-star">✦</span>
+          <span>ПОГРУЖЕНИЕ В АТМОСФЕРУ ТУРЦИИ</span><span class="marquee-star">✦</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>MERHABA! HOŞ GELDİNİZ</span><span class="marquee-star">✦</span>
+          <span>ЖИВОЙ ТУРЕЦКИЙ БЕЗ ЗУБРЕЖКИ</span><span class="marquee-star">✦</span>
+          <span>ПРАКТИКА С ПЕРВОГО ЗАНЯТИЯ</span><span class="marquee-star">✦</span>
+          <span>HER ŞEY ÇOK GÜZEL OLACAK</span><span class="marquee-star">✦</span>
+          <span>СОВРЕМЕННАЯ ИНТЕРАКТИВНАЯ ПЛАТФОРМА</span><span class="marquee-star">✦</span>
+          <span>ПОГРУЖЕНИЕ В АТМОСФЕРУ ТУРЦИИ</span><span class="marquee-star">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         БЛОК 4: ЗАГОЛОВОК + ШИРОКОФОРМАТНЫЙ ВИДЕО-БЛОК (#rec581985299 + #rec825754126)
+         ====================================================================== -->
+    <section class="story-video-section">
+      <!-- Фоновая деталь слева: стакан турецкого чая «армуду» на блюдце с паром -->
+      <div class="section-micro-scene micro-float" style="left:4%;top:36px;--tilt:-5deg;" aria-hidden="true">
+        <svg width="76" height="82" viewBox="0 0 76 82" fill="none">
+          <path class="micro-steam" d="M31 18C29 12 34 9 32 4" stroke="#C83733" stroke-opacity="0.45" stroke-width="1.8" stroke-linecap="round"/>
+          <path class="micro-steam" d="M39 16C37 10 42 7 40 2" stroke="#154B88" stroke-opacity="0.4" stroke-width="1.8" stroke-linecap="round"/>
+          <path class="micro-steam" d="M47 19C45 13 49 10 48 5" stroke="#1A7E86" stroke-opacity="0.4" stroke-width="1.6" stroke-linecap="round"/>
+          <!-- Изящный стакан ince belli -->
+          <path d="M24 24H52C50 35 45 41 46 49C47 56 52 61 50 66H26C24 61 29 56 30 49C31 41 26 35 24 24Z" fill="#FFFFFF" fill-opacity="0.7" stroke="#154B88" stroke-opacity="0.48" stroke-width="1.8" stroke-linejoin="round"/>
+          <!-- Рубиновый чай внутри -->
+          <path d="M27 33H49C47.5 39 44.5 43 45 49C45.8 55 49.5 59 48.2 64H27.8C26.5 59 30.2 55 31 49C31.5 43 28.5 39 27 33Z" fill="#C83733" fill-opacity="0.28"/>
+          <!-- Блюдце с орнаментом и кусочком сахара -->
+          <ellipse cx="38" cy="68" rx="24" ry="5.5" fill="#FDECEB" stroke="#C83733" stroke-opacity="0.5" stroke-width="1.6"/>
+          <rect x="52" y="61" width="6" height="5" rx="1" transform="rotate(-12 52 61)" fill="#FFFFFF" stroke="#154B88" stroke-opacity="0.45" stroke-width="1.2"/>
+        </svg>
+        <span class="section-micro-scene__caption section-micro-scene__caption--crimson">bir çay?</span>
+      </div>
+
+      <!-- Фоновая деталь справа: кунжутный стамбульский симит и чайки -->
+      <div class="section-micro-scene micro-float" style="right:4%;top:34px;--tilt:6deg;" aria-hidden="true">
+        <svg width="84" height="78" viewBox="0 0 84 78" fill="none">
+          <path d="M12 18C17 13 22 15 25 19C28 15 33 13 38 18" stroke="#154B88" stroke-opacity="0.35" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="46" cy="44" r="23" stroke="#CC7A29" stroke-opacity="0.55" stroke-width="10" fill="none"/>
+          <circle cx="46" cy="44" r="23" stroke="#DF9C55" stroke-opacity="0.45" stroke-width="6" stroke-dasharray="5 4" fill="none"/>
+          <!-- Зернышки кунжута -->
+          <circle cx="46" cy="21" r="1.4" fill="#8C4A12" fill-opacity="0.55"/>
+          <circle cx="63" cy="29" r="1.4" fill="#8C4A12" fill-opacity="0.55"/>
+          <circle cx="68" cy="46" r="1.4" fill="#8C4A12" fill-opacity="0.55"/>
+          <circle cx="58" cy="62" r="1.4" fill="#8C4A12" fill-opacity="0.55"/>
+          <circle cx="34" cy="63" r="1.4" fill="#8C4A12" fill-opacity="0.55"/>
+          <circle cx="24" cy="45" r="1.4" fill="#8C4A12" fill-opacity="0.55"/>
+          <circle cx="31" cy="27" r="1.4" fill="#8C4A12" fill-opacity="0.55"/>
+          <path d="M72 16L74 21L79 23L74 25L72 30L70 25L65 23L70 21Z" fill="#DF9C55" fill-opacity="0.55"/>
+        </svg>
+        <span class="section-micro-scene__caption">afiyet olsun ✦</span>
+      </div>
+
+      <div class="container">
+        <div class="ornament-divider" aria-hidden="true">
+          <span class="ornament-divider__line"></span>
+          <span class="ornament-divider__gems">✦ 🫖 Атмосфера Стамбула · 🌷 · Босфор ✦</span>
+          <span class="ornament-divider__line ornament-divider__line--right"></span>
+        </div>
+
+        <h2 class="section-heading-center section-heading-center--brand">
+          Почему студенты выбирают <em>TURKISH</em> ACADEMY?
+        </h2>
+
+        <div class="video-showcase" id="mainVideoShowcase">
+          <canvas class="video-showcase__canvas" id="bosphorusCanvas"></canvas>
+          <div class="video-showcase__content">
+            <div class="video-showcase__badge-logo">
+              <img src="assets/logo-icon-transparent.png" alt="" style="height:26px;width:auto;" />
+              <span>Видео-знакомство с TURKISH ACADEMY · 01:20</span>
+            </div>
+            <h3 class="video-showcase__title">Атмосфера Стамбула, живая речь и поддержка на каждом шаге</h3>
+            <p class="video-showcase__desc">
+              Место под ваше фирменное приветственное видео (720p/1080p MP4 или YouTube/Kinescope) в скругленном контейнере 1760×770 с управлением звуком.
+            </p>
+            <button type="button" class="pill-btn pill-btn--white" data-open-video="brand">
+              <span>Открыть полноэкранное превью</span>
+              <span class="pill-btn__circle">▶</span>
+            </button>
+          </div>
+
+          <button type="button" class="video-sound-btn" id="heroSoundToggle" aria-pressed="false">
+            <span class="sound-bars"><i></i><i></i><i></i></span>
+            <span id="heroSoundLabel">Включить звук</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 5: БЕНТО-СЕТКА ПРЕИМУЩЕСТВ ИЗ 6 КАРТОЧЕК (аналог #rec581106519)
+         ====================================================================== -->
+    <section class="bento-about-section">
+      <!-- Мелкая фоновая сценка справа от заголовка: спящий котик, лапки и оберег Nazar -->
+      <div class="section-micro-scene" style="right:4.5%;top:42px;flex-direction:row;gap:14px;" aria-hidden="true">
+        <span class="section-micro-scene__caption section-micro-scene__caption--teal">istanbul atmosferi ✦</span>
+        <!-- Назар бонджук (Nazar Boncuğu) -->
+        <svg width="46" height="46" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="20" fill="#154B88" fill-opacity="0.22" stroke="#154B88" stroke-opacity="0.45" stroke-width="1.6"/>
+          <circle cx="24" cy="24" r="13" fill="#FFFFFF" fill-opacity="0.85"/>
+          <circle cx="24" cy="24" r="8" fill="#3594B8" fill-opacity="0.48"/>
+          <circle cx="24" cy="24" r="3.5" fill="#154B88" fill-opacity="0.65"/>
+          <circle cx="27" cy="21" r="1.4" fill="#FFFFFF"/>
+        </svg>
+        <!-- Свернувшийся клубочком рыжий стамбульский кот -->
+        <svg width="68" height="48" viewBox="0 0 74 52" fill="none">
+          <path d="M16 36C16 23 27 16 42 18C54 19 62 27 60 36C59 42 51 45 36 45C22 45 16 42 16 36Z" fill="#DF9C55" fill-opacity="0.3" stroke="#9C5718" stroke-opacity="0.48" stroke-width="1.6"/>
+          <path d="M21 25L18 15L26 20M31 20L34 13L37 21" stroke="#9C5718" stroke-opacity="0.48" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M24 29Q27 31 30 29" stroke="#9C5718" stroke-opacity="0.55" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M56 41C65 41 69 35 66 29" stroke="#9C5718" stroke-opacity="0.48" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="container">
+        <h2 class="section-heading-left"><span>TURKISH</span> <strong>ACADEMY — ЭТО:</strong></h2>
+
+        <!-- Пара 1: Высокая карточка слева + 2 карточки справа -->
+        <div class="bento-pair-grid">
+          <!-- Карточка 1 (Высокая слева): Удобная платформа + интерактивный тренажер -->
+          <article class="bento-card bento-card--tall-left">
+            <div>
+              <h3 class="bento-card__title">Удобная платформа</h3>
+              <p class="bento-card__text">
+                Все программы проходят в интерактивном личном кабинете. Мы тренируем сразу все навыки — восприятие на слух, письмо, чтение и уверенное говорение.
+              </p>
+            </div>
+
+            <div class="platform-mockup">
+              <div class="platform-annotations">
+                <span class="platform-note">↘ интерактивные упражнения</span>
+                <span class="platform-note">↙ видеоразборы</span>
+                <span class="platform-note">★ личный словарь</span>
+              </div>
+
+              <div class="platform-ui-window">
+                <div class="platform-ui-dots"><span></span><span></span><span></span></div>
+                <div class="mini-quiz-prompt">
+                  Попробуйте прямо сейчас: как по-турецки сказать «Приятного аппетита!»?
+                </div>
+                <div class="mini-quiz-options" id="miniPlatformQuiz">
+                  <button type="button" class="mini-quiz-btn" data-correct="true">Afiyet olsun!</button>
+                  <button type="button" class="mini-quiz-btn" data-correct="false">Geçmiş olsun!</button>
+                  <button type="button" class="mini-quiz-btn" data-correct="false">İyi yolculuklar!</button>
+                </div>
+                <div class="mini-quiz-feedback" id="miniQuizFeedback">
+                  Нажмите на вариант ответа — автопроверка сработает мгновенно.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 2 (Справа сверху): Стамбульское произношение + 2 облачка -->
+          <article class="bento-card bento-card--pastel">
+            <div>
+              <h3 class="bento-card__title">Естественное произношение</h3>
+              <p class="bento-card__text">
+                Сразу ставим живую мелодику стамбульской речи, чтобы вы понимали не только учебники, но и реальных носителей на улице.
+              </p>
+            </div>
+
+            <div class="pronounce-demo">
+              <div class="pronounce-bubble pronounce-bubble--book">
+                <span class="pronounce-label">В учебнике:</span>
+                bu hafta ne yapacaksın?
+              </div>
+              <div class="pronounce-bubble pronounce-bubble--live">
+                <span class="pronounce-label">В реальной жизни в Стамбуле:</span>
+                bu hafta napıcaksın?
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 3 (Справа снизу): Погружение в культуру -->
+          <article class="bento-card bento-card--split">
+            <div>
+              <h3 class="bento-card__title">Погружение в культуру</h3>
+              <p class="bento-card__text">
+                На занятиях разбираем не только грамматику, но и живой этикет, привычки, юмор, кухню и повседневный контекст современной Турции.
+              </p>
+            </div>
+            <div class="bento-split-visual">
+              <div style="font-size:32px;">🌷 🧿 🫖</div>
+              <div>
+                <strong style="display:block;font-size:15px;margin-bottom:4px;">Культурный код</strong>
+                <span style="font-size:13px;color:var(--text-muted);">Фразы гостеприимства, традиции и реальный быт</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Пара 2: 2 карточки слева + Высокая карточка справа -->
+        <div class="bento-pair-grid">
+          <!-- Карточка 4 (Слева сверху): Дружное комьюнити -->
+          <article class="bento-card bento-card--split">
+            <div>
+              <h3 class="bento-card__title">Дружное комьюнити</h3>
+              <p class="bento-card__text">
+                Студенты находят единомышленников, общаются в теплых чатах потоков и поддерживают друг друга на каждом этапе.
+              </p>
+            </div>
+            <div class="bento-split-visual" style="background:linear-gradient(135deg,#fcebe5 0%,#f9dfd5 100%);">
+              <div style="font-size:28px;">💬 🤝 ✨</div>
+              <div>
+                <strong style="display:block;font-size:15px;margin-bottom:4px;">Чат единомышленников</strong>
+                <span style="font-size:13px;color:var(--text-muted);">Ежедневная практика и нетворкинг</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 5 (Слева снизу, акцентная + 5 стикеров): Поддержка преподавателей -->
+          <article class="bento-card bento-card--brand">
+            <div>
+              <h3 class="bento-card__title">Бережная поддержка наставников</h3>
+              <p class="bento-card__text">
+                Если чувствуете усталость или спад мотивации — кураторы мягко направят, разберут сложную тему голосом и зарядят уверенностью.
+              </p>
+            </div>
+
+            <div class="mentor-stickers-row" aria-label="Стикеры поддержки">
+              <div class="mentor-sticker">🌟<span>Süper!</span></div>
+              <div class="mentor-sticker">🔥<span>Harika!</span></div>
+              <div class="mentor-sticker">💛<span>Aferin!</span></div>
+              <div class="mentor-sticker">🚀<span>Devam!</span></div>
+              <div class="mentor-sticker">🎯<span>Tamam!</span></div>
+            </div>
+          </article>
+
+          <!-- Карточка 6 (Высокая справа): Много разговорной практики -->
+          <article class="bento-card bento-card--tall-right">
+            <div>
+              <h3 class="bento-card__title">Много разговорной практики</h3>
+              <p class="bento-card__text">
+                Помогаем снять языковой барьер мягко и без стресса, чтобы вы получали удовольствие от живого диалога с носителями языка.
+              </p>
+
+              <div class="speaking-preview-grid">
+                <div class="speaking-participant">
+                  <div class="speaking-participant__avatar">АК</div>
+                  <strong style="display:block;font-size:14.5px;">Айгуль · Алматы</strong>
+                  <span style="font-size:13px;color:var(--text-muted);">«Bugün hava çok güzel!»</span>
+                </div>
+                <div class="speaking-participant">
+                  <div class="speaking-participant__avatar">ДМ</div>
+                  <strong style="display:block;font-size:14.5px;">Данияр · Астана</strong>
+                  <span style="font-size:13px;color:var(--text-muted);">«İstanbul'a gitmek istiyorum»</span>
+                </div>
+                <div class="speaking-participant">
+                  <div class="speaking-participant__avatar">МР</div>
+                  <strong style="display:block;font-size:14.5px;">Мадина · Анталья</strong>
+                  <span style="font-size:13px;color:var(--text-muted);">«Artık her şeyi anlıyorum!»</span>
+                </div>
+                <div class="speaking-participant">
+                  <div class="speaking-participant__avatar">ТР</div>
+                  <strong style="display:block;font-size:14.5px;">Куратор в эфире</strong>
+                  <span style="font-size:13px;color:var(--brand);font-weight:700;">● Онлайн-разбор речи</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="speaking-hand-badge handwritten">
+              harika, отлично говорите! ✨
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 6: «НАШЕ ОБУЧЕНИЕ ПОДОЙДЕТ ВАМ, ЕСЛИ:» (#people / #rec581349972)
+         Точная россыпь из 7 карточек-облачков вокруг заголовка
+         ====================================================================== -->
+    <section class="audience-section" id="people">
+      <div class="container">
+        <div class="audience-board">
+          <h2 class="audience-board__heading">Наше обучение подойдет вам, если:</h2>
+
+          <div class="audience-constellation">
+            <span class="audience-doodle audience-doodle--arrow" aria-hidden="true">
+              <svg width="78" height="92" viewBox="0 0 78 92" fill="none">
+                <path d="M12 10 C 6 48, 28 72, 64 78 M49 66 L 66 79 L 48 88" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="audience-doodle audience-doodle--spark1" aria-hidden="true">✦</span>
+            <span class="audience-doodle audience-doodle--spark2" aria-hidden="true">✧</span>
+
+            <div class="audience-pill-card audience-pill-card--accent audience-pill-card--1">
+              вы живете или часто бываете в Турции и хотите чувствовать себя уверенно среди местных
+            </div>
+
+            <div class="audience-pill-card audience-pill-card--2">
+              вы пробовали учить язык сами, но не хватает четкой системы и поддержки
+            </div>
+
+            <div class="audience-pill-card audience-pill-card--3">
+              вы хотите глубже понимать турецкую культуру, традиции и менталитет
+            </div>
+
+            <div class="audience-pill-card audience-pill-card--4">
+              вы хотите поддерживать активный словарный запас и развивать беглость речи
+            </div>
+
+            <div class="audience-pill-card audience-pill-card--5">
+              вы мечтаете свободно объясняться в путешествиях, отелях и ресторанах
+            </div>
+
+            <div class="audience-pill-card audience-pill-card--6">
+              вы любите турецкие сериалы, кино и музыку и хотите понимать их без субтитров
+            </div>
+
+            <div class="audience-pill-card audience-pill-card--7">
+              вы планируете переезд, бизнес-партнерство или поступление в университеты Турции
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 7: 6 ВРЕМЕННЫХ УСЛУГ-ЗАГЛУШЕК ВМЕСТО ЕЁ КНИГИ И КУРСОВ
+         (#format / аналог #rec581390576 — сетка 2 колонки × 3 ряда)
+         ====================================================================== -->
+    <section class="formats-section" id="format">
+      <!-- Мелкая деталь слева: ностальгический красный трамвайчик с улицы Истикляль -->
+      <div class="section-micro-scene micro-float" style="left:3.8%;top:18px;--tilt:-4deg;" aria-hidden="true">
+        <svg width="92" height="72" viewBox="0 0 96 74" fill="none">
+          <path d="M36 14L48 6L60 14" stroke="#154B88" stroke-opacity="0.42" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="48" y1="6" x2="48" y2="18" stroke="#154B88" stroke-opacity="0.42" stroke-width="1.6"/>
+          <rect x="18" y="18" width="60" height="38" rx="9" fill="#C83733" fill-opacity="0.22" stroke="#C83733" stroke-opacity="0.55" stroke-width="1.8"/>
+          <rect x="24" y="25" width="13" height="13" rx="3" fill="#FFFFFF" fill-opacity="0.85" stroke="#154B88" stroke-opacity="0.4" stroke-width="1.3"/>
+          <rect x="41.5" y="25" width="13" height="13" rx="3" fill="#FFFFFF" fill-opacity="0.85" stroke="#154B88" stroke-opacity="0.4" stroke-width="1.3"/>
+          <rect x="59" y="25" width="13" height="13" rx="3" fill="#FFFFFF" fill-opacity="0.85" stroke="#154B88" stroke-opacity="0.4" stroke-width="1.3"/>
+          <line x1="18" y1="44" x2="78" y2="44" stroke="#C83733" stroke-opacity="0.5" stroke-width="1.6"/>
+          <circle cx="48" cy="50" r="3" fill="#DF9C55" fill-opacity="0.8"/>
+          <circle cx="30" cy="60" r="4.5" fill="#154B88" fill-opacity="0.45"/>
+          <circle cx="66" cy="60" r="4.5" fill="#154B88" fill-opacity="0.45"/>
+          <path d="M8 65H88" stroke="#154B88" stroke-opacity="0.28" stroke-width="1.6" stroke-dasharray="4 4"/>
+        </svg>
+        <span class="section-micro-scene__caption section-micro-scene__caption--crimson">istiklal tramvayı</span>
+      </div>
+
+      <!-- Мелкая деталь справа: открытая тетрадь со звездой и пером -->
+      <div class="section-micro-scene micro-float" style="right:3.8%;top:20px;--tilt:5deg;" aria-hidden="true">
+        <svg width="86" height="70" viewBox="0 0 88 72" fill="none">
+          <path d="M14 20C26 17 38 19 44 24C50 19 62 17 74 20V56C62 53 50 55 44 60C38 55 26 53 14 56V20Z" fill="#FFFFFF" fill-opacity="0.8" stroke="#154B88" stroke-opacity="0.45" stroke-width="1.8" stroke-linejoin="round"/>
+          <line x1="44" y1="24" x2="44" y2="60" stroke="#154B88" stroke-opacity="0.38" stroke-width="1.5"/>
+          <line x1="21" y1="30" x2="37" y2="31" stroke="#1A7E86" stroke-opacity="0.45" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="21" y1="38" x2="35" y2="39" stroke="#1A7E86" stroke-opacity="0.45" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M56 33C53 33 51 35.5 51 38.5C51 41.5 53 44 56 44C54.2 43 53.5 41 53.5 38.5C53.5 36 54.2 34 56 33Z" fill="#C83733" fill-opacity="0.55"/>
+          <circle cx="61" cy="38.5" r="1.8" fill="#C83733" fill-opacity="0.55"/>
+          <path d="M72 10L74 15L79 17L74 19L72 24L70 19L65 17L70 15Z" fill="#DF9C55" fill-opacity="0.6"/>
+        </svg>
+        <span class="section-micro-scene__caption">adım adım Türkçe</span>
+      </div>
+
+      <div class="container">
+        <div class="ornament-divider" aria-hidden="true">
+          <span class="ornament-divider__line"></span>
+          <span class="ornament-divider__gems">✦ 🚋 Программы и направления · 🧿 ✦</span>
+          <span class="ornament-divider__line ornament-divider__line--right"></span>
+        </div>
+
+        <h2 class="section-heading-center">
+          Выберите удобное направление обучения
+        </h2>
+
+        <div class="formats-grid">
+          <!-- Услуга-заглушка №1 -->
+          <article class="format-card" data-theme="1">
+            <div>
+              <span class="format-card__badge">● Временная услуга №1 · Заглушка</span>
+              <h3 class="format-card__title">Экспресс-программа «Турецкий для жизни и поездок»</h3>
+              <p class="format-card__desc">
+                Временная карточка-заглушка основной программы для старта с нуля. Здесь будет описание вашего флагманского тарифа или курса.
+              </p>
+              <ul class="format-card__list">
+                <li><span class="format-card__check">✓</span><span>Короткие практические модули на интерактивной платформе</span></li>
+                <li><span class="format-card__check">✓</span><span>Закрытый чат потока и обратная связь куратора</span></li>
+                <li><span class="format-card__check">✓</span><span>Отработка реальных диалогов для быта и путешествий</span></li>
+              </ul>
+            </div>
+            <div class="format-card__footer">
+              <button type="button" class="pill-btn format-card__btn" data-open-service="1">
+                <span>Узнать подробнее</span>
+                <span class="pill-btn__circle">↗</span>
+              </button>
+              <span class="format-card__handnote">самый популярный старт</span>
+            </div>
+          </article>
+
+          <!-- Услуга-заглушка №2 -->
+          <article class="format-card" data-theme="2">
+            <div>
+              <span class="format-card__badge">● Временная услуга №2 · Заглушка</span>
+              <h3 class="format-card__title">Практикум «Деловой и рабочий турецкий»</h3>
+              <p class="format-card__desc">
+                Временная заглушка второй услуги — например, программы для предпринимателей, байеров, релокантов и работы с турецкими партнерами.
+              </p>
+              <ul class="format-card__list">
+                <li><span class="format-card__check">✓</span><span>Деловая переписка, переговоры и профессиональная лексика</span></li>
+                <li><span class="format-card__check">✓</span><span>Разбор реальных рабочих кейсов и контрактов</span></li>
+                <li><span class="format-card__check">✓</span><span>Голосовые тренинги с преподавателем-практиком</span></li>
+              </ul>
+            </div>
+            <div class="format-card__footer">
+              <button type="button" class="pill-btn format-card__btn" data-open-service="2">
+                <span>Узнать подробнее</span>
+                <span class="pill-btn__circle">↗</span>
+              </button>
+              <span class="format-card__handnote">для работы и бизнеса</span>
+            </div>
+          </article>
+
+          <!-- Услуга-заглушка №3 -->
+          <article class="format-card" data-theme="3">
+            <div>
+              <span class="format-card__badge">● Временная услуга №3 · Заглушка</span>
+              <h3 class="format-card__title">Подготовка к экзамену TÖMER и поступлению</h3>
+              <p class="format-card__desc">
+                Временная заглушка академического направления в мини-группах для абитуриентов турецких ВУЗов и соискателей грантов.
+              </p>
+              <ul class="format-card__list">
+                <li><span class="format-card__check">✓</span><span>12 живых практикумов по структуре сертификационного экзамена</span></li>
+                <li><span class="format-card__check">✓</span><span>Мини-группы до 5 человек с проверкой эссе</span></li>
+                <li><span class="format-card__check">✓</span><span>Пробные тестирования с персональным разбором ошибок</span></li>
+              </ul>
+            </div>
+            <div class="format-card__footer">
+              <button type="button" class="pill-btn format-card__btn" data-open-service="3">
+                <span>Узнать подробнее</span>
+                <span class="pill-btn__circle">↗</span>
+              </button>
+              <span class="format-card__handnote">выйди на уровень сертификата</span>
+            </div>
+          </article>
+
+          <!-- Услуга-заглушка №4 -->
+          <article class="format-card" data-theme="4">
+            <div>
+              <span class="format-card__badge">● Временная услуга №4 · Заглушка</span>
+              <h3 class="format-card__title">Живые спикинг-сессии с носителями</h3>
+              <p class="format-card__desc">
+                Временная заглушка еженедельного разговорного формата для снятия языкового барьера и регулярной практики живой речи.
+              </p>
+              <ul class="format-card__list">
+                <li><span class="format-card__check">✓</span><span>Отдельные потоки под начальный, средний и продвинутый уровни</span></li>
+                <li><span class="format-card__check">✓</span><span>Еженедельные онлайн-встречи по 90 минут в уютной атмосфере</span></li>
+                <li><span class="format-card__check">✓</span><span>Камерные группы до 5 участников — говорит каждый</span></li>
+              </ul>
+            </div>
+            <div class="format-card__footer">
+              <button type="button" class="pill-btn format-card__btn" data-open-service="4">
+                <span>Узнать подробнее</span>
+                <span class="pill-btn__circle">↗</span>
+              </button>
+              <span class="format-card__handnote">забудь о языковом барьере</span>
+            </div>
+          </article>
+
+          <!-- Услуга-заглушка №5 (СПЕЦИАЛЬНО ВМЕСТО ЕЁ ЭЛЕКТРОННОЙ КНИГИ!) -->
+          <article class="format-card" data-theme="5">
+            <div>
+              <span class="format-card__badge">● Временная услуга №5 · Вместо книги</span>
+              <h3 class="format-card__title">Интерактивный тренажер слов и сериалов</h3>
+              <p class="format-card__desc">
+                Временная услуга-заглушка вместо электронной книги: самостоятельный цифровой продукт (тренажер карточек, аудио-истории или видео-разборы турецких сериалов).
+              </p>
+              <ul class="format-card__list">
+                <li><span class="format-card__check">✓</span><span>40 тематических наборов живой лексики с озвучкой носителей</span></li>
+                <li><span class="format-card__check">✓</span><span>Удобный доступ с телефона или ноутбука 24/7</span></li>
+                <li><span class="format-card__check">✓</span><span>Бессрочный доступ ко всем обновлениям базы</span></li>
+              </ul>
+            </div>
+            <div class="format-card__footer">
+              <button type="button" class="pill-btn format-card__btn" data-open-service="5">
+                <span>Узнать подробнее</span>
+                <span class="pill-btn__circle">↗</span>
+              </button>
+              <span class="format-card__handnote">учись в своем темпе</span>
+            </div>
+          </article>
+
+          <!-- Услуга-заглушка №6 -->
+          <article class="format-card" data-theme="6">
+            <div>
+              <span class="format-card__badge">● Временная услуга №6 · Заглушка</span>
+              <h3 class="format-card__title">VIP-сопровождение 1-на-1 или в паре</h3>
+              <p class="format-card__desc">
+                Временная заглушка премиального персонального трека по гибкому графику под вашу конкретную цель и сроки.
+              </p>
+              <ul class="format-card__list">
+                <li><span class="format-card__check">✓</span><span>Любой стартовый уровень — от алфавита до свободного B2/C1</span></li>
+                <li><span class="format-card__check">✓</span><span>Индивидуальная траектория и гибкое расписание созвонов</span></li>
+                <li><span class="format-card__check">✓</span><span>Персональный разбор произношения и домашних заданий</span></li>
+              </ul>
+            </div>
+            <div class="format-card__footer">
+              <button type="button" class="pill-btn format-card__btn" data-open-service="6">
+                <span>Узнать подробнее</span>
+                <span class="pill-btn__circle">↗</span>
+              </button>
+              <span class="format-card__handnote">под любой личный запрос</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 8: ОТКРЫТАЯ ФОРМА КОНСУЛЬТАЦИИ (аналог #rec581611855, без бага маски)
+         ====================================================================== -->
+    <section class="consult-banner-section">
+      <div class="container">
+        <div class="consult-banner">
+          <div class="consult-banner__top">
+            <div class="consult-banner__copy">
+              <h2 class="consult-banner__title">Подберите идеальный формат обучения</h2>
+              <p class="consult-banner__sub">
+                Если вы не уверены, какой у вас текущий уровень турецкого или какая из программ подойдет лучше всего — оставьте контакты, и наш координатор бережно проконсультирует вас:
+              </p>
+            </div>
+
+            <div class="consult-banner__visual">
+              <div class="consult-speech-tag">Kolay gelsin! Поможем с выбором ✦</div>
+              <div class="consult-avatar-circle">
+                <img src="assets/logo-full-transparent.png" alt="Отдел заботы TURKISH ACADEMY" />
+              </div>
+            </div>
+          </div>
+
+          <form class="consult-inline-form" id="inlineConsultForm" novalidate>
+            <input type="text" class="consult-input" name="name" placeholder="Ваше имя" required />
+            <input type="tel" class="consult-input js-phone-input" name="phone" placeholder="+7 (700) 000-00-00 (WhatsApp)" required />
+            <input type="text" class="consult-input" name="handle" placeholder="Ник в Telegram или вопрос" />
+            <button type="submit" class="consult-submit-btn">Подобрать программу</button>
+          </form>
+          <div class="form-status-msg" id="inlineConsultStatus" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 9: КОМАНДА ШКОЛЫ — КАРТОЧКА ОСНОВАТЕЛЯ + ГОРИЗОНТАЛЬНЫЙ СЛАЙДЕР
+         (#hocalar / аналог #rec581643125 + #rec581695169 + #rec581678016)
+         ====================================================================== -->
+    <section class="team-section" id="hocalar">
+      <!-- Мелкая деталь справа от заголовка команды: почтовый штамп Стамбула и бумажный самолетик -->
+      <div class="section-micro-scene" style="right:4.5%;top:6px;flex-direction:row;gap:16px;" aria-hidden="true">
+        <svg width="96" height="54" viewBox="0 0 100 56" fill="none">
+          <path d="M4 44Q36 22 72 26" stroke="#154B88" stroke-opacity="0.34" stroke-width="1.7" stroke-dasharray="4 5" stroke-linecap="round"/>
+          <path d="M68 18L94 12L79 34L75 25L68 18Z" fill="#E7F0FB" stroke="#154B88" stroke-opacity="0.5" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+        <div style="border:1.8px dashed rgba(200,55,51,0.38);border-radius:14px;padding:6px 14px;transform:rotate(-5deg);background:rgba(255,255,255,0.55);">
+          <div style="font-size:10px;font-weight:800;letter-spacing:1.4px;color:rgba(200,55,51,0.62);">İSTANBUL · BOĞAZİÇİ</div>
+          <div class="handwritten" style="font-size:20px;color:rgba(21,75,136,0.65);line-height:1;">merhaba, друзья! ✦</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="section-heading-left">Команда <span>TURKISH</span> <strong>ACADEMY</strong></h2>
+
+        <!-- Главная широкая карточка основателя/руководителя (заглушка профиля) -->
+        <div class="founder-card">
+          <div>
+            <h3 class="founder-card__role">Айлин, основатель и главный методист</h3>
+            <div class="founder-badges">
+              <span class="founder-badge">Диплом лингвиста · C1</span>
+              <span class="founder-badge">8 лет жизни в Стамбуле</span>
+              <span class="founder-badge">Профиль-заглушка</span>
+            </div>
+
+            <p class="founder-card__p">
+              Привет! Здесь располагается приветственный блок основателя вашей школы. Мы сохранили точные пропорции и структуру оригинала: личное обращение, путь в языке и главные цифры доверия.
+            </p>
+            <p class="founder-card__p">
+              За годы преподавания более 1800 студентов прошли путь от первых турецких фраз до свободной жизни, учебы и работы в Турции. В TURKISH ACADEMY мы соединили живую атмосферу Стамбула и понятную систему обучения без зубрежки.
+            </p>
+
+            <div class="founder-highlight-box">
+              <span>На занятиях мы делимся не только четкой системой языка без воды, но и реальными жизненными лайфхаками адаптации в Турции.</span>
+              <span style="font-size:32px;flex-shrink:0;">🌊</span>
+            </div>
+          </div>
+
+          <div class="founder-portrait-wrap">
+            <div class="founder-portrait">
+              <span class="founder-selam-tag">Herkese selam! ↘</span>
+              <div style="font-size:74px;margin-bottom:12px;">👩‍💼</div>
+              <strong style="font-size:20px;margin-bottom:6px;">Место под фото основателя</strong>
+              <span style="font-size:14px;color:var(--text-muted);max-width:260px;">Квадратный портрет 672×672 со скруглением 34px</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Подсказка свайпа "листай вправо" (#rec581695169) -->
+        <div class="swipe-hint-bar">
+          <span class="swipe-hint-text">листай вправо ➔</span>
+          <div class="swipe-nav-btns">
+            <button type="button" class="swipe-arrow-btn" id="teachersPrevBtn" aria-label="Предыдущий преподаватель">←</button>
+            <button type="button" class="swipe-arrow-btn" id="teachersNextBtn" aria-label="Следующий преподаватель">→</button>
+          </div>
+        </div>
+
+        <!-- Горизонтальный свайп-ряд из 4 карточек преподавателей (#rec581678016) -->
+        <div class="teachers-scroll-track" id="teachersTrack">
+          <!-- Преподаватель 1 -->
+          <article class="teacher-item">
+            <div class="teacher-item__head">
+              <div class="teacher-photo" style="background:linear-gradient(135deg,#e3effd,#cbe0fb);">
+                <span style="font-size:48px;">👩‍🏫</span>
+                <small style="font-size:12px;color:var(--text-muted);margin-top:6px;">Фото 257×257</small>
+              </div>
+              <div>
+                <h3 class="teacher-item__name">Дениз, старший преподаватель</h3>
+                <span class="teacher-item__cert" style="color:var(--srv-4);">Сертификат TÖMER C1</span>
+                <p class="teacher-item__fact">5 лет опыта преподавания</p>
+              </div>
+            </div>
+            <div class="teacher-item__body">
+              <p class="teacher-item__bio">
+                Профиль преподавателя №1 (заглушка). Лингвист-переводчик, стажировалась в Анкаре и Стамбуле. Помогает разложить турецкую грамматику по полочкам через живые ассоциации и диалоги без заучивания таблиц.
+              </p>
+              <button type="button" class="teacher-video-trigger" style="color:var(--srv-4);" data-open-video="deniz">
+                <span class="teacher-video-trigger__play" style="background:var(--srv-4);">▶</span>
+                <span>Смотреть видео-представление с Дениз</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Преподаватель 2 -->
+          <article class="teacher-item">
+            <div class="teacher-item__head">
+              <div class="teacher-photo" style="background:linear-gradient(135deg,#dff3f4,#c3e8ea);">
+                <span style="font-size:48px;">👩‍🎓</span>
+                <small style="font-size:12px;color:var(--text-muted);margin-top:6px;">Фото 257×257</small>
+              </div>
+              <div>
+                <h3 class="teacher-item__name">Селин, куратор разговорной практики</h3>
+                <span class="teacher-item__cert" style="color:var(--srv-1);">Уровень C1 · Стамбул</span>
+                <p class="teacher-item__fact">Учится и живет в Турции</p>
+              </div>
+            </div>
+            <div class="teacher-item__body">
+              <p class="teacher-item__bio">
+                Профиль преподавателя №2 (заглушка). Влюбилась в турецкий язык еще в школе, переехала в Стамбул и знает все тонкости современной разговорной лексики, сленга и идеального произношения.
+              </p>
+              <button type="button" class="teacher-video-trigger" style="color:var(--srv-1);" data-open-video="selin">
+                <span class="teacher-video-trigger__play" style="background:var(--srv-1);">▶</span>
+                <span>Смотреть видео-представление с Селин</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Преподаватель 3 -->
+          <article class="teacher-item">
+            <div class="teacher-item__head">
+              <div class="teacher-photo" style="background:linear-gradient(135deg,#fcebe5,#f8d6c9);">
+                <span style="font-size:48px;">👨‍🏫</span>
+                <small style="font-size:12px;color:var(--text-muted);margin-top:6px;">Фото 257×257</small>
+              </div>
+              <div>
+                <h3 class="teacher-item__name">Эмре, приглашенный носитель языка</h3>
+                <span class="teacher-item__cert" style="color:var(--srv-2);">Носитель · Измир</span>
+                <p class="teacher-item__fact">Ведущий разговорных сессий</p>
+              </div>
+            </div>
+            <div class="teacher-item__body">
+              <p class="teacher-item__bio">
+                Профиль преподавателя №3 (заглушка). Создает на разговорных встречах настолько теплую и поддерживающую атмосферу, что даже самые стеснительные участники начинают говорить полными фразами с первого эфира.
+              </p>
+              <button type="button" class="teacher-video-trigger" style="color:var(--srv-2);" data-open-video="emre">
+                <span class="teacher-video-trigger__play" style="background:var(--srv-2);">▶</span>
+                <span>Смотреть видео-представление с Эмре</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Преподаватель 4 -->
+          <article class="teacher-item">
+            <div class="teacher-item__head">
+              <div class="teacher-photo" style="background:linear-gradient(135deg,#efe9fa,#dfd2f7);">
+                <span style="font-size:48px;">👩‍💻</span>
+                <small style="font-size:12px;color:var(--text-muted);margin-top:6px;">Фото 257×257</small>
+              </div>
+              <div>
+                <h3 class="teacher-item__name">Лейла, эксперт по экзамену TÖMER</h3>
+                <span class="teacher-item__cert" style="color:var(--srv-6);">Педагог-филолог · C1</span>
+                <p class="teacher-item__fact">Педагогическое образование</p>
+              </div>
+            </div>
+            <div class="teacher-item__body">
+              <p class="teacher-item__bio">
+                Профиль преподавателя №4 (заглушка). Специализируется на академическом и деловом турецком, готовит студентов к поступлению в университеты Анкары, Стамбула и Измира.
+              </p>
+              <button type="button" class="teacher-video-trigger" style="color:var(--srv-6);" data-open-video="leyla">
+                <span class="teacher-video-trigger__play" style="background:var(--srv-6);">▶</span>
+                <span>Смотреть видео-представление с Лейлой</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 10: АКЦЕНТНЫЙ БАННЕР ИЗ 3 ИСТОРИЙ СТУДЕНТОВ (аналог #rec581719432)
+         ====================================================================== -->
+    <section class="stories-banner-section">
+      <div class="container">
+        <div class="stories-banner">
+          <div class="stories-grid">
+            <div class="story-col">
+              <h3 class="story-col__title">Наши студенты поступают в престижные университеты Турции</h3>
+              <div class="story-col__media">
+                <span class="story-col__emoji">🎓 🏛️</span>
+                <strong>Стамбул · Анкара · Измир</strong>
+                <span class="story-col__caption">Место под GIF/видео-историю поступления студента (446×302)</span>
+              </div>
+            </div>
+
+            <div class="story-col">
+              <h3 class="story-col__title">Свободно общаются с близкими, друзьями и деловыми партнерами</h3>
+              <div class="story-col__media">
+                <span class="story-col__emoji">💬 ❤️</span>
+                <strong>Понимание с полуслова</strong>
+                <span class="story-col__caption">Место под живую историю общения с носителями (446×302)</span>
+              </div>
+            </div>
+
+            <div class="story-col">
+              <h3 class="story-col__title">А другие комфортно решают любые бытовые вопросы после переезда</h3>
+              <div class="story-col__media">
+                <span class="story-col__emoji">✈️ 🌴</span>
+                <strong>Жизнь и путешествия без барьеров</strong>
+                <span class="story-col__caption">Место под видео/GIF отзыв из поездки (446×302)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 11: РЕЗУЛЬТАТЫ В ФОРМАТЕ «ДО / ПОСЛЕ» (#reviews / #rec581726878)
+         3 колонки с круглыми аватарами, выступающими над карточками
+         ====================================================================== -->
+    <section class="results-section" id="reviews">
+      <!-- Мелкая деталь слева: нежный оберег Назар и искорки -->
+      <div class="section-micro-scene micro-float" style="left:5.5%;top:14px;--tilt:-6deg;" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="34" r="21" fill="#154B88" fill-opacity="0.2" stroke="#154B88" stroke-opacity="0.45" stroke-width="1.6"/>
+          <circle cx="32" cy="34" r="13.5" fill="#FFFFFF" fill-opacity="0.88"/>
+          <circle cx="32" cy="34" r="8" fill="#1A7E86" fill-opacity="0.42"/>
+          <circle cx="32" cy="34" r="3.5" fill="#154B88" fill-opacity="0.7"/>
+          <path d="M52 10L54 15L59 17L54 19L52 24L50 19L45 17L50 15Z" fill="#DF9C55" fill-opacity="0.6"/>
+        </svg>
+        <span class="section-micro-scene__caption">maşallah ✦</span>
+      </div>
+
+      <!-- Мелкая деталь справа: оливковая веточка и три звезды прогресса -->
+      <div class="section-micro-scene micro-float" style="right:5.5%;top:16px;--tilt:5deg;" aria-hidden="true">
+        <svg width="78" height="62" viewBox="0 0 80 64" fill="none">
+          <path d="M18 50C28 38 44 26 64 18" stroke="#1A7E86" stroke-opacity="0.48" stroke-width="1.8" stroke-linecap="round"/>
+          <ellipse cx="32" cy="32" rx="7" ry="3.5" transform="rotate(-35 32 32)" fill="#1A7E86" fill-opacity="0.24" stroke="#1A7E86" stroke-opacity="0.48" stroke-width="1.3"/>
+          <ellipse cx="47" cy="23" rx="7" ry="3.5" transform="rotate(-30 47 23)" fill="#1A7E86" fill-opacity="0.24" stroke="#1A7E86" stroke-opacity="0.48" stroke-width="1.3"/>
+          <ellipse cx="42" cy="40" rx="7" ry="3.5" transform="rotate(15 42 40)" fill="#1A7E86" fill-opacity="0.24" stroke="#1A7E86" stroke-opacity="0.48" stroke-width="1.3"/>
+          <path d="M24 14L26 19L31 21L26 23L24 28L22 23L17 21L22 19Z" fill="#DF9C55" fill-opacity="0.58"/>
+          <path d="M62 34L63.5 38L67.5 39.5L63.5 41L62 45L60.5 41L56.5 39.5L60.5 38Z" fill="#C83733" fill-opacity="0.45"/>
+        </svg>
+        <span class="section-micro-scene__caption section-micro-scene__caption--teal">harika sonuçlar</span>
+      </div>
+
+      <div class="container">
+        <div class="ornament-divider" aria-hidden="true">
+          <span class="ornament-divider__line"></span>
+          <span class="ornament-divider__gems">✦ 🌟 Реальные истории учеников · 🌷 ✦</span>
+          <span class="ornament-divider__line ornament-divider__line--right"></span>
+        </div>
+
+        <h2 class="section-heading-center">Результаты наших студентов</h2>
+
+        <div class="results-grid">
+          <!-- Кейс 1 -->
+          <article class="result-card">
+            <div class="result-card__avatar" style="background:linear-gradient(135deg,#d9eff1,#b8e2e6);color:var(--brand-dark);">АК</div>
+            <h3 class="result-card__name">РЕЗУЛЬТАТ АЛИИ</h3>
+            <p class="result-card__program">VIP-сопровождение (Услуга №6)</p>
+            <p class="result-card__point">
+              <strong>ДО:</strong> Знала только базовые приветствия и боялась говорить вслух перед поступлением в магистратуру.
+            </p>
+            <p class="result-card__point result-card__point--after">
+              <strong>ПОСЛЕ:</strong> За 7 месяцев системных занятий вышла на уверенный уровень B1+, успешно прошла собеседование на турецком языке и переехала на учебу в Стамбул без страха перед бытовыми и учебными диалогами.
+            </p>
+          </article>
+
+          <!-- Кейс 2 -->
+          <article class="result-card">
+            <div class="result-card__avatar" style="background:linear-gradient(135deg,#fcebe5,#f6d2c4);color:#8f3218;">ТБ</div>
+            <h3 class="result-card__name">РЕЗУЛЬТАТ ТИМУРА</h3>
+            <p class="result-card__program">Деловой турецкий (Услуга №2)</p>
+            <p class="result-card__point">
+              <strong>ДО:</strong> Часто летал на переговоры с фабриками в Бурсу и Стамбул, но зависел от переводчиков и не понимал нюансов разговора.
+            </p>
+            <p class="result-card__point result-card__point--after">
+              <strong>ПОСЛЕ:</strong> Сам ведет деловую переписку в WhatsApp с поставщиками, поддерживает неформальную беседу за ужином и выстроил доверительные отношения с турецкими партнерами.
+            </p>
+          </article>
+
+          <!-- Кейс 3 -->
+          <article class="result-card">
+            <div class="result-card__avatar" style="background:linear-gradient(135deg,#e3f5ed,#c4ead9);color:#176142;">КМ</div>
+            <h3 class="result-card__name">РЕЗУЛЬТАТ КАМИЛЛЫ</h3>
+            <p class="result-card__program">Экспресс-старт + Спикинг (Услуги №1 и №4)</p>
+            <p class="result-card__point">
+              <strong>ДО:</strong> Переехала к морю, но в банке, клинике и при аренде жилья постоянно сталкивалась с языковым ступором.
+            </p>
+            <p class="result-card__point result-card__point--after">
+              <strong>ПОСЛЕ:</strong> Спокойно решает все ежедневные вопросы без словаря, завела местных друзей и смотрит любимые турецкие сериалы в оригинале, улавливая шутки и интонации.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 12: АСИММЕТРИЧНАЯ БЕНТО-СЕТКА ОТЗЫВОВ 4+1 (аналог #rec581743560)
+         ====================================================================== -->
+    <section class="reviews-bento-section">
+      <!-- Мелкая деталь слева: два стаканчика чая и теплое сердечко -->
+      <div class="section-micro-scene micro-float" style="left:4%;top:4px;--tilt:-4deg;" aria-hidden="true">
+        <svg width="78" height="66" viewBox="0 0 80 68" fill="none">
+          <path d="M40 16C37 11 31 12 31 17C31 21 40 26 40 26C40 26 49 21 49 17C49 12 43 11 40 16Z" fill="#C83733" fill-opacity="0.32" stroke="#C83733" stroke-opacity="0.55" stroke-width="1.3"/>
+          <path d="M18 32H34L31 54H21L18 32Z" fill="#FFFFFF" fill-opacity="0.8" stroke="#154B88" stroke-opacity="0.45" stroke-width="1.5" transform="rotate(-8 26 43)"/>
+          <path d="M46 32H62L59 54H49L46 32Z" fill="#FFFFFF" fill-opacity="0.8" stroke="#154B88" stroke-opacity="0.45" stroke-width="1.5" transform="rotate(8 54 43)"/>
+          <path d="M20 40H32L30 52H22L20 40Z" fill="#C83733" fill-opacity="0.25" transform="rotate(-8 26 43)"/>
+          <path d="M48 40H60L58 52H50L48 40Z" fill="#C83733" fill-opacity="0.25" transform="rotate(8 54 43)"/>
+        </svg>
+        <span class="section-micro-scene__caption section-micro-scene__caption--crimson">çok teşekkürler</span>
+      </div>
+
+      <!-- Мелкая деталь справа: изникский керамический медальон -->
+      <div class="section-micro-scene micro-float" style="right:4%;top:6px;--tilt:6deg;" aria-hidden="true">
+        <svg width="68" height="68" viewBox="0 0 72 72" fill="none">
+          <rect x="12" y="12" width="48" height="48" rx="12" transform="rotate(15 36 36)" fill="#E7F0FB" fill-opacity="0.65" stroke="#154B88" stroke-opacity="0.42" stroke-width="1.6"/>
+          <path d="M36 18L42 30L54 36L42 42L36 54L30 42L18 36L30 30Z" fill="#FFFFFF" fill-opacity="0.8" stroke="#1A7E86" stroke-opacity="0.5" stroke-width="1.4"/>
+          <circle cx="36" cy="36" r="5" fill="#C83733" fill-opacity="0.38"/>
+        </svg>
+        <span class="section-micro-scene__caption">kalpten sözler</span>
+      </div>
+
+      <div class="container">
+        <h2 class="section-heading-center section-heading-center--brand">
+          Теплые слова об обучении в <em>TURKISH</em> ACADEMY
+        </h2>
+
+        <div class="reviews-bento-layout">
+          <!-- Левая колонка: Высокий отзыв + Плашка со статистикой -->
+          <div class="reviews-col-left">
+            <article class="review-card review-card--tall">
+              <div class="review-card__head">
+                <div class="review-card__ava" style="background:#e3f3f4;color:var(--brand);">ДН</div>
+                <div>
+                  <h3 class="review-card__author">Динара</h3>
+                  <p class="review-card__course">выпускница «Экспресс-старта»</p>
+                </div>
+              </div>
+              <p class="review-card__text">
+                Selam! Çok teşekkür ederim! Очень рада, что выбрала именно вашу программу. Безумно удобная интерактивная платформа: открываешь урок в любое свободное окно, сразу тренируешь слова в карточках и отправляешь голосовые задания куратору. Все объясняется настолько логично и тепло, что грамматика укладывается в голове сама без скучной зубрежки!
+              </p>
+            </article>
+
+            <div class="reviews-stat-pill">
+              <span>более 1800 студентов прошли наши программы</span>
+              <span style="font-size:38px;">🌟</span>
+            </div>
+          </div>
+
+          <!-- Правая колонка: Широкий отзыв сверху + Сплит снизу (Отзыв + Акцентная цитата) -->
+          <div class="reviews-col-right">
+            <article class="review-card">
+              <div class="review-card__head">
+                <div class="review-card__ava" style="background:#fcebe5;color:var(--srv-2);">ЖН</div>
+                <div>
+                  <h3 class="review-card__author">Жанель</h3>
+                  <p class="review-card__course">участница спикинг-сессий и тренажера</p>
+                </div>
+              </div>
+              <p class="review-card__text">
+                Хочу поблагодарить всю команду за невероятно дружелюбную атмосферу! Аудио-практика с обратной связью — это моя отдельная любовь: перестала стесняться своего акцента уже на третьей неделе. После каждой разговорной встречи выходишь с зарядом энергии на всю неделю!
+              </p>
+            </article>
+
+            <div class="reviews-right-bottom">
+              <article class="review-card">
+                <div class="review-card__head">
+                  <div class="review-card__ava" style="background:#efe9fa;color:var(--srv-6);">АР</div>
+                  <div>
+                    <h3 class="review-card__author">Арман</h3>
+                    <p class="review-card__course">студент «Делового турецкого»</p>
+                  </div>
+                </div>
+                <p class="review-card__text">
+                  В недавней поездке в Стамбул коллеги искренне удивились, как чисто я строю фразы! Оказалось, на слух я понимаю гораздо больше, чем ожидал. Отличная подача материала и максимум практики.
+                </p>
+              </article>
+
+              <div class="reviews-quote-card">
+                <blockquote>«Интерактивные модули и живые разборы — просто восторг!»</blockquote>
+                <div class="reviews-quote-card__doodle">✨💬</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 13: АККОРДЕОН ЧАСТЫХ ВОПРОСОВ FAQ (#faq / #rec581760426 + NLM033)
+         ====================================================================== -->
+    <section class="faq-section" id="faq">
+      <!-- Мелкая деталь справа от заголовка FAQ: джезва и чашечка турецкого кофе -->
+      <div class="section-micro-scene" style="right:4.5%;top:4px;flex-direction:row;gap:12px;" aria-hidden="true">
+        <span class="section-micro-scene__caption section-micro-scene__caption--teal">keyifli sohbet ✦</span>
+        <svg width="78" height="58" viewBox="0 0 82 60" fill="none">
+          <!-- Джезва (турка) с длинной ручкой -->
+          <path d="M4 20L24 28" stroke="#9C5718" stroke-opacity="0.55" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M24 24H42L46 48H20L24 24Z" fill="#DF9C55" fill-opacity="0.34" stroke="#9C5718" stroke-opacity="0.52" stroke-width="1.6" stroke-linejoin="round"/>
+          <!-- Чашечка финджан (fincan) -->
+          <path class="micro-steam" d="M62 18C60 13 65 10 63 5" stroke="#C83733" stroke-opacity="0.45" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M52 30H72C71 41 67 46 62 46C57 46 53 41 52 30Z" fill="#FFFFFF" fill-opacity="0.88" stroke="#154B88" stroke-opacity="0.48" stroke-width="1.6"/>
+          <path d="M72 33C76 33 77 39 72 40" stroke="#154B88" stroke-opacity="0.48" stroke-width="1.5" stroke-linecap="round"/>
+          <ellipse cx="62" cy="48" rx="14" ry="3.5" fill="#E7F0FB" stroke="#154B88" stroke-opacity="0.42" stroke-width="1.4"/>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="faq-heading-wrap">
+          <h2 class="section-heading-left" style="margin:0;">Часто задаваемые вопросы</h2>
+          <span style="font-size:34px;color:var(--srv-2);" aria-hidden="true">✺</span>
+        </div>
+
+        <div class="faq-list" id="faqAccordion">
+          <div class="faq-item is-open">
+            <button type="button" class="faq-trigger" aria-expanded="true">
+              <span>В чём особенность методики обучения в TURKISH ACADEMY?</span>
+              <span class="faq-trigger__icon">+</span>
+            </button>
+            <div class="faq-panel" style="max-height:420px;">
+              <div class="faq-panel__inner">
+                Методика строится вокруг живой коммуникации и логики построения турецкой фразы (агглютинации и гармонии гласных) на понятных примерах из реальной жизни. Вы начинаете конструировать собственные предложения с первых уроков и избегаете типичных ошибок за счет бережной голосовой обратной связи.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Как устроено обучение на интерактивной платформе?</span>
+              <span class="faq-trigger__icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel__inner">
+                Материалы открываются в вашем личном кабинете 2–3 раза в неделю — проходить их можно в удобное время с ноутбука или смартфона. Тестовые упражнения проверяются автоматически за секунду, а устные и письменные задания разбирает ваш куратор или ведущий преподаватель.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Можно ли оформить обучение в подарок близкому человеку?</span>
+              <span class="faq-trigger__icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel__inner">
+                Да, для любого из наших направлений можно оформить именной электронный подарочный сертификат с открытой датой активации. Координатор подготовит сертификат в день обращения.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Доступна ли оплата частями или в беспроцентную рассрочку?</span>
+              <span class="faq-trigger__icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel__inner">
+                Да, вы можете оплатить участие картой любого банка, через Kaspi QR / удаленный счет либо оформить удобную рассрочку без переплат. Оставьте заявку, и менеджер отправит подходящий способ оплаты.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Сохраняется ли доступ к урокам после завершения потока?</span>
+              <span class="faq-trigger__icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel__inner">
+                Конечно! В зависимости от выбранного направления доступ к интерактивным урокам, словарю и материалам сохраняется от 3 до 12 месяцев (а для цифрового тренажера — бессрочно).
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Я не знаю свой точный уровень языка. С чего начать?</span>
+              <span class="faq-trigger__icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <div class="faq-panel__inner">
+                Нажмите кнопку «Начать учиться» или «Написать сообщение» ниже — наш координатор проведет экспресс-диагностику за 5 минут и порекомендует оптимальную группу или индивидуальный трек.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         БЛОК 14: ПЛАШКА «НЕ НАШЛИ ОТВЕТ НА СВОЙ ВОПРОС?» (аналог #rec581763771)
+         ====================================================================== -->
+    <section class="still-questions-section">
+      <div class="container">
+        <div class="still-questions-card">
+          <span class="still-doodle still-doodle--left" aria-hidden="true">✦ 〰</span>
+          <span class="still-doodle still-doodle--right" aria-hidden="true">〰 ✦</span>
+
+          <h2 class="still-questions-card__title">
+            Не нашли ответ на свой вопрос? <br/>Свяжитесь с нашим координатором здесь
+          </h2>
+
+          <button type="button" class="pill-btn" data-open-modal="manager">
+            <span>Написать сообщение</span>
+            <span class="pill-btn__circle">↗</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       БЛОК 15: 4-КОЛОНОЧНЫЙ СКРУГЛЕННЫЙ ФУТЕР (аналог #rec581766873)
+       ======================================================================== -->
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-capsule">
+        <div class="footer-grid">
+          <!-- Колонка 1: Круглый бейдж логотипа TURKISH ACADEMY, реквизиты-заглушка и 3 соцсети -->
+          <div>
+            <a href="#top" class="footer-logo-badge" aria-label="TURKISH ACADEMY — На главную">
+              <img src="assets/logo-circle-badge.png" alt="TURKISH ACADEMY" />
+            </a>
+            <div class="footer-legal-meta">
+              ИП / ТОО «TURKISH ACADEMY» (реквизиты-заглушка)<br/>
+              БИН / ИИН: 000000000000<br/>
+              Республика Казахстан, г. Алматы / Астана
+            </div>
+            <p class="footer-social-label">Где нас можно найти:</p>
+            <div class="footer-socials">
+              <a href="#WhatsApp" class="footer-social-btn" data-open-modal="manager" title="WhatsApp">WA</a>
+              <a href="#Telegram" class="footer-social-btn" data-open-modal="manager" title="Telegram">TG</a>
+              <a href="#Instagram" class="footer-social-btn" data-open-modal="manager" title="Instagram">IG</a>
+            </div>
+          </div>
+
+          <!-- Колонка 2: Якорная навигация по странице -->
+          <div class="footer-nav-col">
+            <a href="#people" class="dance-link dance-link--light">Кому подойдет</a>
+            <a href="#format" class="dance-link dance-link--light">Направления обучения</a>
+            <a href="#hocalar" class="dance-link dance-link--light">Наша команда</a>
+            <a href="#reviews" class="dance-link dance-link--light">Отзывы и кейсы</a>
+            <a href="#faq" class="dance-link dance-link--light">FAQ</a>
+          </div>
+
+          <!-- Колонка 3: Все 6 временных услуг-заглушек -->
+          <div class="footer-nav-col">
+            <a href="#format" class="dance-link dance-link--light" data-open-service="1">Экспресс-старт</a>
+            <a href="#format" class="dance-link dance-link--light" data-open-service="2">Деловой турецкий</a>
+            <a href="#format" class="dance-link dance-link--light" data-open-service="3">Подготовка TÖMER</a>
+            <a href="#format" class="dance-link dance-link--light" data-open-service="4">Спикинг-практика</a>
+            <a href="#format" class="dance-link dance-link--light" data-open-service="5">Тренажер слов (заглушка)</a>
+            <a href="#format" class="dance-link dance-link--light" data-open-service="6">VIP-сопровождение</a>
+          </div>
+
+          <!-- Колонка 4: Иллюстративный блок с обрезанной панорамой Стамбула из логотипа -->
+          <div class="footer-art-card">
+            <div class="footer-art-floating-icons">
+              <span>🌙</span>
+              <span>☕</span>
+            </div>
+            <img src="assets/logo-icon-transparent.png" alt="Панорама Стамбула" class="footer-art-card__skyline" />
+            <div style="text-align:center;padding:4px 0;">
+              <div class="handwritten" style="font-size:32px;color:var(--brand-crimson);margin-bottom:4px;">Görüşürüz!</div>
+              <div style="font-size:13.5px;font-weight:600;color:var(--text-muted);">До встречи на занятиях в TURKISH ACADEMY</div>
+            </div>
+            <div class="footer-art-floating-icons">
+              <span>🌷</span>
+              <span>✨</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Нижний ряд юридических ссылок -->
+        <div class="footer-bottom-links">
+          <a href="#privacy" data-open-modal="manager">Политика конфиденциальности</a>
+          <a href="#oferta" data-open-modal="manager">Публичная оферта</a>
+          <a href="#refund" data-open-modal="manager">Правила возврата денежных средств</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка возврата наверх (#rec581767249) -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Наверх">↑</button>
+
+  <!-- ========================================================================
+       МОДАЛЬНОЕ ОКНО №1: ЗАЯВКА МЕНЕДЖЕРУ (#popup:manager / #rec580980669)
+       ======================================================================== -->
+  <div class="modal-overlay" id="managerModal" aria-hidden="true">
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="managerModalTitle">
+      <button type="button" class="modal-close" data-close-modal>×</button>
+      <h3 class="modal-title" id="managerModalTitle">Изучайте турецкий легко и с удовольствием</h3>
+      <p class="modal-desc">
+        Оставьте контакты — координатор поможет определить уровень и подберет комфортный формат под ваши цели:
+      </p>
+      <form class="modal-stack-form" id="modalConsultForm">
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="tel" class="js-phone-input" name="phone" placeholder="+7 (700) 000-00-00 (WhatsApp)" required />
+        <input type="text" name="telegram" placeholder="Ваш @ник в Telegram (по желанию)" />
+        <label class="modal-consent">
+          <input type="checkbox" checked required />
+          <span>Даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</span>
+        </label>
+        <button type="submit" class="pill-btn" style="width:100%;">
+          <span>Отправить заявку</span>
+          <span class="pill-btn__circle">↗</span>
+        </button>
+        <div class="form-status-msg" id="modalConsultStatus" style="color:var(--brand);"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       МОДАЛЬНОЕ ОКНО №2: ВРЕМЕННАЯ ЗАГЛУШКА УСЛУГИ (для всех 6 карточек и меню)
+       ======================================================================== -->
+  <div class="modal-overlay" id="serviceStubModal" aria-hidden="true">
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="serviceStubTitle">
+      <button type="button" class="modal-close" data-close-modal>×</button>
+      <span class="service-stub-pill" id="serviceStubBadge">Временная услуга · Заглушка</span>
+      <h3 class="modal-title" id="serviceStubTitle">Название временной услуги</h3>
+      <p class="modal-desc" id="serviceStubDesc"></p>
+      <ul class="format-card__list" id="serviceStubList" style="margin-bottom:18px;"></ul>
+      <div class="service-stub-price">
+        <span style="color:var(--text-muted);font-size:14px;">Ориентир тарифа (заглушка):</span>
+        <span id="serviceStubPrice" style="font-size:18px;">—</span>
+      </div>
+      <button type="button" class="pill-btn" id="serviceStubOrderBtn" style="width:100%;">
+        <span>Оставить предзаявку на направление</span>
+        <span class="pill-btn__circle">↗</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       МОДАЛЬНОЕ ОКНО №3: ВИДЕО-ПРЕЗЕНТАЦИЯ ПРЕПОДАВАТЕЛЯ (аналог T331 #popup:...)
+       ======================================================================== -->
+  <div class="modal-overlay" id="videoGreetingModal" aria-hidden="true">
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+      <button type="button" class="modal-close" data-close-modal>×</button>
+      <h3 class="modal-title" id="videoModalTitle">Видео-знакомство</h3>
+      <div class="video-modal-screen">
+        <div style="font-size:52px;margin-bottom:10px;">🎬</div>
+        <strong id="videoModalSpeaker" style="font-size:19px;margin-bottom:8px;"></strong>
+        <p id="videoModalQuote" style="margin:0;font-size:14.5px;opacity:0.92;max-width:380px;"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=9"></script>
+</body>
+</html>
